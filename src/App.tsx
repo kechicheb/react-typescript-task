@@ -1,12 +1,17 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import InputFeild from "./components/InputFeild";
+import TodoList from "./components/TodoList";
 
-function App() {
+const App: React.FC = () => {
+
+
   return (
     <div className="App">
-     ahmed
+      <span className="heading">Taskify</span>
+      <InputFeild  />
+      <TodoList  />
     </div>
   );
-}
-
+};
 export default App;
